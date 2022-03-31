@@ -1,0 +1,5 @@
+# Sensitive data
+setup.sh
+
+# Binaries
+cmd/meander
