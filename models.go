@@ -1,4 +1,4 @@
-package thejourney
+package main
 
 // Query is the user representation of a query to build recommendations.
 type Query struct {

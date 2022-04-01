@@ -1,4 +1,4 @@
-package thejourney
+package main
 
 import (
 	"encoding/json"

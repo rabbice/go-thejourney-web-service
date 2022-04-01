@@ -1,4 +1,4 @@
-package thejourney
+package main
 
 type Cost int8
 

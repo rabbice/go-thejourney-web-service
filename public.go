@@ -1,4 +1,4 @@
-package thejourney
+package main
 
 // Facade matches with types with public versions.
 type Facade interface {
