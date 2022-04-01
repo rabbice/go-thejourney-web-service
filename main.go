@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"runtime"
 )
 
@@ -23,7 +24,12 @@ func main() {
 	fileServer := http.FileServer(http.Dir("public/static"))
 	mux.Handle("/", http.StripPrefix("/", fileServer))
 
-	log.Println("Starting the API on :8080...")
-	err := http.ListenAndServe(":8080", mux)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	log.Println("Starting the API on :...")
+	err := http.ListenAndServe(":"+port, mux)
 	log.Fatal(err)
 }
