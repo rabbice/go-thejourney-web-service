@@ -15,14 +15,14 @@
 
     $(".change-adventure").click(function(){
       $("#adventure").slideUp();
-      $("#meanderform").slideDown();
+      $("#journeyform").slideDown();
     });
 
     $(".shuffle").click(function(){
-      $("#meanderform").submit();
+      $("#journeyform").submit();
     });
 
-    $("#meanderform").submit(function(e){
+    $("#journeyform").submit(function(e){
       e.preventDefault();
       busy(true);
 
@@ -56,7 +56,7 @@
             var title = $('#journeys option:selected').text() + " in " + locationText;
             $("#adventure .panel-title").text(title);
             $("#adventure").slideDown();
-            $("#meanderform").slideUp();
+            $("#journeyform").slideUp();
 
             if (!map) {
               map = new google.maps.Map($("#map")[0], {
