@@ -1,13 +1,13 @@
 package thejourney
 
-import "strings"
+import (
+	"strings"
+)
 
 // ParseCost parses the string cost value to the number value.
 func ParseCost(s string) Cost {
 	return costStrings[s]
 }
-
-
 
 // String parses the CostRange field values to a string representation.
 func (r CostRange) String() string {

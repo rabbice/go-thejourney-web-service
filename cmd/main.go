@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/rabbice/thejourney/backend"
+	"github.com/rabbice/thejourney"
 )
 
 func main() {

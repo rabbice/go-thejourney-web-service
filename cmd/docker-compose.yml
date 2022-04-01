@@ -1,0 +1,18 @@
+version: "2" 
+
+services:
+  api:
+    image: 705905076562.dkr.ecr.us-east-2.amazonaws.com/imaru/thejourney:latest
+
+  dashboard:
+    image: static-site
+    networks:
+      - api_network
+
+  nginx:
+    image: 705905076562.dkr.ecr.us-east-2.amazonaws.com/imaru/nginx:latest
+    ports:
+      - 80:80
+    depends_on:
+      - api
+      - dashboard
