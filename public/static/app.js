@@ -1,7 +1,7 @@
 (function($){
   $(function(){
 
-    var apiHost = "https://random-journeys.herokuapp.com";
+    var apiHost = "https://randomjourneys.herokuapp.com";
     var map = null;
     var markers = [];
 
