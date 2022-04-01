@@ -1,7 +1,7 @@
 (function($){
   $(function(){
 
-    var apiHost = "https://rhubarb-sundae-27646.herokuapp.com";
+    var apiHost = "https://random-journeys.herokuapp.com";
     var map = null;
     var markers = [];
 
