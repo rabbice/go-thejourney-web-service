@@ -14,19 +14,19 @@ var Journeys = []interface{}{
 	&Journey{
 		Name: "Romantic",
 		Places: []string{
-			"park", "bar", "movie_theater", "restaurant", "florist", "taxi_stand",
+			"park", "bar", "movie_theater", "restaurant", "florist",
 		},
 	},
 	&Journey{
 		Name: "Shopping",
 		Places: []string{
-			"department_store", "cafe", "clothing_store", "jewelry_store", "shoe_store",
+			"department_store", "convenience_store", "cafe", "clothing_store", "jewelry_store", "shoe_store", "supermarket",
 		},
 	},
 	&Journey{
 		Name: "Night Out",
 		Places: []string{
-			"bar", "casino", "food", "bar", "night_club", "bar", "bar", "hospital",
+			"bar", "casino", "food", "night_club", "bar",
 		},
 	},
 	&Journey{

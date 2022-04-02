@@ -47,7 +47,7 @@
           data: {
             "lat": location.lat(),
             "lng": location.lng(),
-            "radius": 5000,
+            "radius": 2000,
             "cost": $("#price").val(),
             "journey": $("#journeys").val()
           },
