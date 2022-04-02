@@ -13,7 +13,7 @@ func main() {
 	runtime.GOMAXPROCS(nuCPU)
 	fmt.Printf("Running with %d CPUs\n", nuCPU)
 
-	APIKey = "AIzaSyAZcw_SdmOmqG0LTe3fPkbAMBA8dXFWcGI"
+	APIKey = "[GOOGLE_API_KEY]"
 
 	mux := http.NewServeMux()
 
